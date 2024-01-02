@@ -71,7 +71,7 @@ const ChartList = ({ temperatureData, heartRateData, ecgData }) => {
                   <Line type="monotone" dataKey="ecg" stroke="#ff9900" dot={false} />
                   <CartesianGrid stroke="#ccc" />
                   <XAxis dataKey="timestamp" />
-                  <YAxis />
+                  <YAxis type="number" domain={['dataMin - 5', 'dataMax + 5']} />
                   <Tooltip />
                   <Legend />
                 </LineChart>
